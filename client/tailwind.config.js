@@ -14,6 +14,7 @@ module.exports = {
       },
       colors: {
         "primary-bg": "#111111",
+        "secondary-bg": "#1A1A1A",
         "primary-text": "#FAFAFA",
         "secondary-text": "#A2A2A2",
         "wall-success": "#19ED7B",

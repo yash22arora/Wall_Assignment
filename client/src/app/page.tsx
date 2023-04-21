@@ -1,9 +1,11 @@
 import { Slate } from "@/components/common/Slate/Slate";
 import { Hanken_Grotesk } from "next/font/google";
-import Image from "next/image";
 import pfp from "../assets/media/pfp.png";
-import { Badge } from "@/components/common/Badge/Badge";
 import { Avatar } from "@/components/common/Avatar/Avatar";
+import { BsTwitter } from "react-icons/bs";
+import { FiGlobe } from "react-icons/fi";
+import { CommonCommunities } from "@/components/Profile/Communities/CommonCommunities";
+import { COMMON_COMMUNITIES } from "@/constants";
 
 const font = Hanken_Grotesk({ subsets: ["latin"] });
 
@@ -13,7 +15,7 @@ export default function Home() {
       className={`${font.className} flex min-h-screen flex-row items-start justify-start p-6 gap-6 text-secondary-text `}
     >
       <Slate className="p-4 pb-6 w-1/4 flex flex-col">
-        <div className="flex flex-row items-center justify-start gap-3 mb-8">
+        <div className="flex flex-row items-center justify-start gap-4 mb-8">
           <Avatar
             currentLevel={2}
             src={pfp}
@@ -30,10 +32,20 @@ export default function Home() {
             </span>
           </div>
         </div>
-        <p className="text-secondary-text">
+        <div className="flex flex-row items-center justify-start gap-4">
+          <span className="flex flex-row items-center gap-2 py-1 px-3 bg-secondary-bg rounded-3xl">
+            <BsTwitter className="text-[#1D9BF0] text-xl" />
+            <span>@dingalingts</span>
+          </span>
+          <span className="p-1 bg-secondary-bg rounded-full">
+            <FiGlobe className="text-2xl text-secondary-text" />
+          </span>
+        </div>
+        <p className="text-secondary-text my-8">
           An Investor / Collector of #NFTs and OG enthusiast. Co-Founder and
           owner of 📦 @nftboxes
         </p>
+        <CommonCommunities communities={COMMON_COMMUNITIES} />
       </Slate>
     </main>
   );
