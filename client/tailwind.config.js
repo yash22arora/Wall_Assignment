@@ -18,6 +18,7 @@ module.exports = {
         "secondary-text": "#A2A2A2",
         "wall-success": "#19ED7B",
         "wall-yellow": "#FFC148",
+        "wall-yellow-bg": "#F8A9101A",
         "wall-green": "#FFC148",
         "wall-blue": "#4BDFFF",
       },
