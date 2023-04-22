@@ -5,7 +5,8 @@ import { Avatar } from "@/components/common/Avatar/Avatar";
 import { BsTwitter } from "react-icons/bs";
 import { FiGlobe } from "react-icons/fi";
 import { CommonCommunities } from "@/components/Profile/Communities/CommonCommunities";
-import { COMMON_COMMUNITIES } from "@/constants";
+import { COMMON_COMMUNITIES, TAGS } from "@/constants";
+import { TagList } from "@/components/Profile/Tags/TagList";
 
 const font = Hanken_Grotesk({ subsets: ["latin"] });
 
@@ -46,6 +47,9 @@ export default function Home() {
           owner of 📦 @nftboxes
         </p>
         <CommonCommunities communities={COMMON_COMMUNITIES} />
+        <div className="my-8">
+          <TagList tags={TAGS} />
+        </div>
       </Slate>
     </main>
   );
