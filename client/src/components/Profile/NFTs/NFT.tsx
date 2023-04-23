@@ -7,7 +7,7 @@ export const NFT: React.FC<INFTProps> = (props) => {
   const { nft } = props;
   return (
     <Slate
-      className={`p-1 pb-2 flex flex-col rounded-lg w-[201px] cursor-pointer`}
+      className={`p-1 pb-2 flex flex-col rounded-lg w-[201px] cursor-pointer hover:scale-[1.02] duration-400 transition-all`}
     >
       <div className="relative">
         <Image

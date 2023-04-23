@@ -9,10 +9,10 @@ export const Achievement: React.FC<IAchievementProps> = (props) => {
   const blurColor = "bg-" + color;
   return (
     <Slate
-      className={`p-2.5 flex flex-col rounded-2xl w-[201px] relative overflow-hidden`}
+      className={`p-2.5 flex flex-col rounded-2xl w-[201px] relative overflow-hidden achievementContainer`}
     >
       <div
-        className={`absolute z-10 -top-[69px] -left-[58px] w-[174px] h-[174px] rounded-full blur-xl bg-opacity-10 ${blurColor}`}
+        className={`absolute w-[174px] h-[174px] rounded-full blur-xl bg-opacity-10 transition-all ${blurColor} achievementBlur`}
       ></div>
       <div className="flex flex-row items-center w-full text-ellipsis gap-3 h-[52px]">
         <Image

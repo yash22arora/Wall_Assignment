@@ -4,7 +4,6 @@
 
 body {
   max-width: 100vw;
-  overflow: hidden;
 }
 
 :root {
@@ -42,4 +41,16 @@ body {
 
 .progressBarAvatar * {
   stroke-width: 2;
+}
+
+.achievementContainer:hover .achievementBlur {
+  transform: scale(1.5);
+  transition: all;
+  transition-duration: 400ms;
+}
+
+.achievementBlur {
+  top: -69px;
+  left: -58px;
+  transition-duration: 400ms;
 }

@@ -6,7 +6,7 @@ import { IButtonProps } from "./types";
 export const Button: React.FC<IButtonProps> = (props) => {
   const { variant = "primary", children, className, ...rest } = props;
   const [buttonStyle, setButtonStyle] = useState({
-    background: "",
+    background: "hover:bg-secondary-bg",
     text: "text-primary-text text-sm leading-5",
     border: "border border-secondary-text",
   });
