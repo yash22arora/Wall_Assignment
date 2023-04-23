@@ -4,6 +4,12 @@ import comm2 from "./assets/media/comm2.png";
 import comm3 from "./assets/media/comm3.png";
 import comm4 from "./assets/media/comm4.png";
 import { ITag } from "./components/Profile/Tags/types";
+import { IAchievement } from "./components/Profile/Achievements/types";
+import ach1 from "./assets/media/badge1.png";
+import ach2 from "./assets/media/badge2.png";
+import ach3 from "./assets/media/badge3.png";
+import ach4 from "./assets/media/badge4.png";
+import ach5 from "./assets/media/badge5.png";
 
 export const COMMON_COMMUNITIES: ICommunity[] = [
   {
@@ -63,5 +69,53 @@ export const TAGS: ITag[] = [
     id: "7",
     name: "ens",
     percent: 12,
+  },
+];
+
+export const ACHIEVEMENTS: IAchievement[] = [
+  {
+    title: "ENS Linked",
+    img: ach1,
+    status: "ENS Linked",
+    objectName: "dingaling.eth",
+    eth: 1.82,
+    xpEarned: 200,
+    date: "22-03-2023",
+  },
+  {
+    title: "Best Flip",
+    img: ach2,
+    status: "Sold",
+    objectName: "CryptoPunk #2131",
+    eth: 98.5,
+    xpEarned: 150,
+    date: "13-04-2023",
+  },
+  {
+    title: "Should have sold",
+    img: ach3,
+    status: "Mint",
+    objectName: "Rare Apepe #6974",
+    eth: 98.5,
+    xpEarned: 200,
+    date: "14-03-2023",
+  },
+  {
+    title: "First NFT bought",
+    img: ach4,
+    status: "Bought",
+    objectName: "BAYC #7925",
+    eth: 98.5,
+    xpEarned: 10,
+    date: "14-03-2023",
+  },
+  {
+    title: "Paper Handed",
+    img: ach5,
+    status: "Sold",
+    objectName: "Moonbird #7866",
+    eth: 98.5,
+    xpEarned: 200,
+    date: "13-04-2023",
   },
 ];

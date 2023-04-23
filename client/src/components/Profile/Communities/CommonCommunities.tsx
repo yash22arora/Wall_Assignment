@@ -17,7 +17,7 @@ export const CommonCommunities: React.FC<ICommunitiesProps> = (props) => {
               key={community.id}
               width={48}
               height={48}
-              className="rounded-lg"
+              className="rounded-lg cursor-pointer"
             />
           );
         })}

@@ -17,7 +17,7 @@ export default function Home() {
     <main
       className={`${font.className} flex min-h-screen flex-row items-start justify-start p-6 gap-6 text-secondary-text `}
     >
-      <Slate className="p-4 pb-6 w-1/4 flex flex-col">
+      <Slate className="p-4 pb-6 w-1/4 flex flex-col rounded-2xl">
         <div className="flex flex-row items-center justify-start gap-4 mb-8">
           <Avatar
             currentLevel={2}
@@ -46,7 +46,10 @@ export default function Home() {
         </div>
         <p className="text-secondary-text my-8">
           An Investor / Collector of #NFTs and OG enthusiast. Co-Founder and
-          owner of 📦 @nftboxes
+          owner of 📦{" "}
+          <span className="cursor-pointer hover:underline underline-offset-2">
+            @nftboxes
+          </span>
         </p>
         <CommonCommunities communities={COMMON_COMMUNITIES} />
         <div className="my-8">
