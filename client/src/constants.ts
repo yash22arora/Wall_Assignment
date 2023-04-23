@@ -86,7 +86,7 @@ export const ACHIEVEMENTS: IAchievement[] = [
     objectName: "dingaling.eth",
     eth: 1.82,
     xpEarned: 200,
-    date: "22-03-2023",
+    date: "2 months ago",
   },
   {
     title: "Best Flip",
@@ -95,7 +95,7 @@ export const ACHIEVEMENTS: IAchievement[] = [
     objectName: "CryptoPunk #2131",
     eth: 98.5,
     xpEarned: 150,
-    date: "13-04-2023",
+    date: "10 days ago",
   },
   {
     title: "Should have sold",
@@ -104,7 +104,7 @@ export const ACHIEVEMENTS: IAchievement[] = [
     objectName: "Rare Apepe #6974",
     eth: 98.5,
     xpEarned: 200,
-    date: "14-03-2023",
+    date: "10 days ago",
   },
   {
     title: "First NFT bought",
@@ -113,7 +113,7 @@ export const ACHIEVEMENTS: IAchievement[] = [
     objectName: "BAYC #7925",
     eth: 98.5,
     xpEarned: 10,
-    date: "14-03-2023",
+    date: "10 days ago",
   },
   {
     title: "Paper Handed",
@@ -122,7 +122,7 @@ export const ACHIEVEMENTS: IAchievement[] = [
     objectName: "Moonbird #7866",
     eth: 98.5,
     xpEarned: 200,
-    date: "13-04-2023",
+    date: "10 days ago",
   },
 ];
 
