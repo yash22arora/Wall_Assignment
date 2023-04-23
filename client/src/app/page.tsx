@@ -5,19 +5,20 @@ import { Avatar } from "@/components/common/Avatar/Avatar";
 import { BsTwitter } from "react-icons/bs";
 import { FiGlobe } from "react-icons/fi";
 import { CommonCommunities } from "@/components/Profile/Communities/CommonCommunities";
-import { COMMON_COMMUNITIES, TAGS } from "@/constants";
+import { ACHIEVEMENTS, COMMON_COMMUNITIES, TAGS } from "@/constants";
 import { TagList } from "@/components/Profile/Tags/TagList";
 import { Button } from "@/components/common/Button/Button";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
+import { AchievementList } from "@/components/Profile/Achievements/AchievementList";
 
 const font = Hanken_Grotesk({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <main
-      className={`${font.className} flex min-h-screen flex-row items-start justify-start p-6 gap-6 text-secondary-text `}
+      className={`${font.className} flex min-h-screen flex-row items-start justify-start p-6 gap-6 text-secondary-text max-w-[100vw] `}
     >
-      <Slate className="p-4 pb-6 w-1/4 flex flex-col rounded-2xl">
+      <Slate className="p-4 pb-6 w-1/4 min-w-[292px] flex flex-col rounded-2xl">
         <div className="flex flex-row items-center justify-start gap-4 mb-8">
           <Avatar
             currentLevel={2}
@@ -60,6 +61,11 @@ export default function Home() {
           <MdOutlineKeyboardDoubleArrowRight className="text-xl" />
         </Button>
       </Slate>
+      <div className="flex flex-col">
+        <div className="overflow-scroll">
+          <AchievementList achievements={ACHIEVEMENTS} />
+        </div>
+      </div>
     </main>
   );
 }

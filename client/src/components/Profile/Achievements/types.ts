@@ -16,5 +16,7 @@ export interface IAchievementProps {
 }
 
 export interface IAchievementsProps {
-  achievements: IAchievementProps[];
+  achievements: IAchievement[];
 }
+
+export type TAchievementColor = "wall-blue" | "wall-yellow" | "wall-green";
