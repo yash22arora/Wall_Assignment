@@ -7,6 +7,8 @@ import { FiGlobe } from "react-icons/fi";
 import { CommonCommunities } from "@/components/Profile/Communities/CommonCommunities";
 import { COMMON_COMMUNITIES, TAGS } from "@/constants";
 import { TagList } from "@/components/Profile/Tags/TagList";
+import { Button } from "@/components/common/Button/Button";
+import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 
 const font = Hanken_Grotesk({ subsets: ["latin"] });
 
@@ -34,11 +36,11 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-row items-center justify-start gap-4">
-          <span className="flex flex-row items-center gap-2 py-1 px-3 bg-secondary-bg rounded-3xl">
+          <span className="flex flex-row items-center gap-2 py-1 px-3 bg-secondary-bg rounded-3xl cursor-pointer">
             <BsTwitter className="text-[#1D9BF0] text-xl" />
             <span>@dingalingts</span>
           </span>
-          <span className="p-1 bg-secondary-bg rounded-full">
+          <span className="p-1 bg-secondary-bg rounded-full cursor-pointer">
             <FiGlobe className="text-2xl text-secondary-text" />
           </span>
         </div>
@@ -50,6 +52,10 @@ export default function Home() {
         <div className="my-8">
           <TagList tags={TAGS} />
         </div>
+        <Button className="flex flex-row justify-center items-center py-3 px-9 gap-2 w-full rounded-full">
+          <span>Subscribe</span>
+          <MdOutlineKeyboardDoubleArrowRight className="text-xl" />
+        </Button>
       </Slate>
     </main>
   );

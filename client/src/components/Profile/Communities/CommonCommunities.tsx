@@ -5,7 +5,7 @@ export const CommonCommunities: React.FC<ICommunitiesProps> = (props) => {
   const { communities } = props;
   return (
     <div className="flex flex-col w-full">
-      <span className="text-sm mb-1">
+      <span className="text-sm mb-2">
         Common communties ({communities.length})
       </span>
       <div className="flex flex-row items-center gap-2">
