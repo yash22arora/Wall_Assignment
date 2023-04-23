@@ -63,6 +63,7 @@ export default function Home() {
         </Button>
       </Slate>
       <div className="flex flex-col overflow-hidden">
+        <h1 className="font-medium mb-6">Highlights</h1>
         <div className="overflow-scroll">
           <AchievementList achievements={ACHIEVEMENTS} />
         </div>
