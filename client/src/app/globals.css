@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
+body {
   max-width: 100vw;
   overflow: hidden;
-} */
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;

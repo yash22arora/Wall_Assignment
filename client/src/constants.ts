@@ -10,6 +10,12 @@ import ach2 from "./assets/media/badge2.png";
 import ach3 from "./assets/media/badge3.png";
 import ach4 from "./assets/media/badge4.png";
 import ach5 from "./assets/media/badge5.png";
+import { INFT } from "./components/Profile/NFTs/types";
+import nft1 from "./assets/media/nft1.png";
+import nft2 from "./assets/media/nft2.png";
+import nft3 from "./assets/media/nft3.png";
+import nft4 from "./assets/media/nft4.png";
+import nft5 from "./assets/media/nft5.png";
 
 export const COMMON_COMMUNITIES: ICommunity[] = [
   {
@@ -117,5 +123,48 @@ export const ACHIEVEMENTS: IAchievement[] = [
     eth: 98.5,
     xpEarned: 200,
     date: "13-04-2023",
+  },
+];
+
+export const NFTS: INFT[] = [
+  {
+    img: nft1,
+    title: "Azuki #9839",
+    floorEth: 12.74,
+    boughtEth: 2.82,
+    percentIncrease: 21.6,
+    date: "3 Months",
+  },
+  {
+    img: nft2,
+    title: "MAYC #9839",
+    floorEth: 12.74,
+    boughtEth: 2.82,
+    percentIncrease: 21.6,
+    date: "3 Months",
+  },
+  {
+    img: nft3,
+    title: "MoonBirds #9839",
+    floorEth: 12.74,
+    boughtEth: 2.82,
+    percentIncrease: 21.6,
+    date: "3 Months",
+  },
+  {
+    img: nft4,
+    title: "Otherdeed #9839",
+    floorEth: 12.74,
+    boughtEth: 2.82,
+    percentIncrease: 21.6,
+    date: "3 Months",
+  },
+  {
+    img: nft5,
+    title: "Cryptoz #9839",
+    floorEth: 12.74,
+    boughtEth: 2.82,
+    percentIncrease: 21.6,
+    date: "3 Months",
   },
 ];
