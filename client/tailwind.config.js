@@ -20,7 +20,7 @@ module.exports = {
         "wall-success": "#19ED7B",
         "wall-yellow": "#FFC148",
         "wall-yellow-bg": "#F8A9101A",
-        "wall-green": "#FFC148",
+        "wall-green": "#44FFC8",
         "wall-blue": "#4BDFFF",
       },
     },

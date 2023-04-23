@@ -5,8 +5,15 @@ import { FaEthereum } from "react-icons/fa";
 
 export const Achievement: React.FC<IAchievementProps> = (props) => {
   const { achievement, color } = props;
+  const textColor = "text-" + color;
+  const blurColor = "bg-" + color;
   return (
-    <Slate className={`p-2.5 flex flex-col rounded-2xl w-[201px]`}>
+    <Slate
+      className={`p-2.5 flex flex-col rounded-2xl w-[201px] relative overflow-hidden`}
+    >
+      <div
+        className={`absolute z-10 -top-[69px] -left-[58px] w-[174px] h-[174px] rounded-full blur-xl bg-opacity-10 ${blurColor}`}
+      ></div>
       <div className="flex flex-row items-center w-full text-ellipsis gap-3 h-[52px]">
         <Image
           src={achievement.img}
@@ -18,7 +25,7 @@ export const Achievement: React.FC<IAchievementProps> = (props) => {
           <span className="text-primary-text text-sm leading-5 w-max">
             {achievement.title}
           </span>
-          <span className={`text-xs font-normal py-1 px-2`}>
+          <span className={`text-xs font-normal py-1 px-2 ${textColor}`}>
             {achievement.status}
           </span>
         </div>

@@ -1,12 +1,25 @@
 import { Achievement } from "./Achievement";
-import { IAchievementsProps } from "./types";
+import { IAchievementsProps, TAchievementColor } from "./types";
 
 export const AchievementList: React.FC<IAchievementsProps> = (props) => {
+  const colors: TAchievementColor[] = [
+    "wall-blue",
+    "wall-yellow",
+    "wall-green",
+    "wall-blue",
+    "wall-green",
+  ];
   const { achievements } = props;
   return (
     <div className="flex flex-row items-center overflow-x-scroll gap-4 w-max pb-4">
       {achievements.map((achievement, idx) => {
-        return <Achievement key={idx} achievement={achievement} color={""} />;
+        return (
+          <Achievement
+            key={idx}
+            achievement={achievement}
+            color={colors[idx]}
+          />
+        );
       })}
     </div>
   );

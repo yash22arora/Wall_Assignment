@@ -12,7 +12,7 @@ export interface IAchievement {
 
 export interface IAchievementProps {
   achievement: IAchievement;
-  color: string;
+  color: TAchievementColor;
 }
 
 export interface IAchievementsProps {
