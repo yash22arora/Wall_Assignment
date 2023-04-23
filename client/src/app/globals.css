@@ -39,3 +39,7 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.progressBarAvatar * {
+  stroke-width: 2;
+}

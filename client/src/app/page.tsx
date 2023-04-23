@@ -24,7 +24,7 @@ export default function Home() {
           <Avatar
             currentLevel={2}
             src={pfp}
-            currentPoints={1200}
+            currentPoints={1000}
             nextLevelPoints={1400}
             showLevel={true}
           />
