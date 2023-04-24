@@ -32,7 +32,7 @@ export const Achievement: React.FC<IAchievementProps> = (props) => {
       </div>
       <div className="flex flex-row justify-between items-center mt-5">
         <span
-          className={`text-xs py-1 px-2 text-secondary-text font-medium leading-5`}
+          className={`text-xs py-1 pl-2 text-secondary-text font-medium leading-5`}
         >
           {achievement.objectName}
         </span>
