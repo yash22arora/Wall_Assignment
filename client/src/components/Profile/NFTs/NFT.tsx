@@ -22,7 +22,10 @@ export const NFT: React.FC<INFTProps> = (props) => {
           {nft.date}
         </div>
       </div>
-      <div className="flex flex-row justify-between items-center mt-5">
+      <span className="mt-4 text-primary-text font-semibold px-2">
+        {nft.title}
+      </span>
+      <div className="flex flex-row justify-between items-center mt-1">
         <span
           className={`text-xs py-1 px-2 text-secondary-text font-medium leading-5`}
         >
